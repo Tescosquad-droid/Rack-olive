@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+  </head>
+  <body>
+    <div class="order-successful js-success">
+      <div class="text">
+        Order successful!<br>
+        Check receipt below
+      </div>
+      <div class="multicolor js-multicolor"></div>
+    </div>
+    <nav>Checkout(<span class="js-amount"></span>)</nav>
+    <main>
+      <div class="header"><p>Finances</p></div>
+      <div class="purchase-container">
+        <div class="purchase-details">
+          <div class="order-header">Order summary</div>
+          <div class="details">Items(<p class="js-amount" style="display: inline-block;"></p>): <span class="js-price">$0.00</span></div>
+          <div class="details">Shipping &amp; handling: <span class="loss js-shipping">$0.00</span></div>
+          <div class="details">Total before tax: <span class="js-before-tax">$0.00</span></div>
+          <div class="details">Estimated tax (10%): <span class="loss js-tax">$0.00</span></div>
+          <hr class="hr1"><hr class="hr2">
+          <div class="total">Order total: <span class="js-total">$0.00</span></div>
+          <button class="order-button js-button">Place Order</button>
+        </div>
+        <a href="receipt.html"><button class="view-receipt js-receipt">View Receipt</button></a>
+      </div>
+      <div class="header"><p>Ordered Products</p></div>
+      <div class="overall-ordered">
+
+      </div>
+    </main>
+
+    <script src="scripts/checkout.js" type="module"></script>
+  </body>
+</html>

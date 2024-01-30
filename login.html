@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+  </head>
+  <body>
+    <div class="login-form">
+      <header>Login</header>
+      <div class="container">
+        <label for="username">Username or Email:</label>
+        <input type="email" id="name">
+        <p class="js-name-warning warning">Please input a correct username or email!</p>
+      </div>
+      <div class="container">
+        <label for="password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="password">
+          <img src="images/password-locked-logo.png" alt="" class="see-password js-password">
+        </div>
+        <p class="js-password-warning warning">Please input a correct password!</p>
+      </div>
+      <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+      <div class="button-container js-button-container">
+        <button class="js-login login-button"><a class="href">Login</a></button>
+      </div>
+    </div>
+
+    <script src="scripts/login.js" type="module"></script>
+  </body>
+</html>

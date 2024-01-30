@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles/shopping-page.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <nav>
+      <div class="company-name">
+        <a href="home-page.html">
+          Rack
+        </a>
+      </div>
+      <div style="display: flex; align-items: center; column-gap: 20px; margin-right: 20px;">
+        <div style="position: relative;">
+          <a href="checkout.html">
+            <img src="images/white-shop-cart.png" alt="" class="shop-cart" title="checkout">
+            <p class="order-count js-order-count">0</p>
+          </a>
+        </div>
+        <div class="profile-pic name-abbr" style="cursor: default;"></div>
+      </div>
+    </nav>
+    <main>
+      <div class="filter-container">
+        <div class="filter">
+          Filter
+          <img src="images/double-medium-filter-icon.png" alt="" class="filter-icon js-filter">
+        </div>
+        
+        <div class="single-filter-container js-filters">
+          <div class="individual-container">
+            Gender
+            <select name="filter" id="filter" class="js-gender gender-click">
+              <option value="all" >all</option>
+              <option value="male" >male</option>
+              <option value="female" >female</option>
+            </select>
+          </div>
+          <div class="individual-container">
+            Brand
+            <select name="filter-2" id="filter-2" class="js-brand brand-click">
+              <option value="all" class="brand" >all</option>
+              <option value="adidas" class="brand">adidas</option>
+              <option value="nike" class="brand">nike</option>
+              <option value="puma" class="brand">puma</option>
+              <option value="louis vuitton" class="brand">louis vuitton</option>
+              <option value="others" class="brand">others</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="js-product-container product-container"></div>
+    </main>
+    <script src="scripts/shopping-page.js" type="module"></script>
+  </body> 
+</html>

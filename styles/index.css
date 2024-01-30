@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+}
+html {
+  height: 639px;
+}
+body {
+  font-family: Nunito;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 100%;
+  color: black;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 5px 5px 5px #e4e4e4;
+  padding: 0px 15px;
+  position: relative;
+}
+li {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  text-wrap: nowrap;
+}
+ul {
+  cursor: pointer;
+}
+.left-side {
+  display: flex;
+}
+.page-name {
+  font-family:Pacifico;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 65px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+main {
+  display: flex;
+}
+.intro-container {
+  width: 40%;
+  height: 60%;
+  line-height: 35px;
+  margin-top: 70px;
+  margin-left: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.write-up {
+  margin-bottom: 25px;
+}
+.button-container {
+  border: solid;
+  border-color: black;
+  padding: 2px;
+  width: 118px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+.button-1 {
+  margin: 20px;
+}
+.button-2-container {
+  border: solid;
+  border-color: black;
+  padding: 2px;
+  width: 78px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.get-started {
+  height: 40px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  text-wrap:nowrap;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.get-started:active {
+  transform: scale(0.9);
+}
+.shoe-container {
+  width: 700px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  margin: 100px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.shoe-image {
+  width: 500px;
+  border-radius: 100px;
+  background-color: #eaeaea;
+}
+footer {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  background: radial-gradient(rgb(255, 46, 46), transparent, transparent);
+  overflow: visible;
+  opacity: 0.8;
+  border-color: transparent;
+  border-radius: 100%;
+
+  animation: changeColor 8s infinite;
+  transition: animation 0.3s;
+}
+@keyframes changeColor {
+  0% {
+    background: radial-gradient(rgb(255, 46, 46), transparent, transparent);
+  }
+  33% {
+    background: radial-gradient(rgb(255, 189, 46), transparent, transparent);
+  }
+  50% {
+    background: radial-gradient(rgb(68, 255, 0), transparent, transparent);
+  }
+  66% {
+    background: radial-gradient(rgb(46, 255, 196), transparent, transparent);
+  }
+  100% {
+    background: radial-gradient(rgb(174, 0, 255), transparent, transparent);
+  }
+}
+@media (max-width: 1200px) {
+  .shoe-image {
+    width: 400px;
+  }
+}
+@media (max-width: 1100px) {
+  .shoe-image {
+    width: 350px;
+  }
+  .shoe-container {
+    width: 450px;
+  }
+  footer {
+    bottom: -100px;
+  }
+}
+@media (max-width: 1000px) {
+  .intro-container {
+    width: 50%;
+  }
+  .shoe-image {
+    width: 320px;
+  }
+  .shoe-container {
+    width: 380px;
+    height: 200px;
+  }
+  .intro-container {
+    width: 50%;
+    line-height: 32px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .intro-container {
+    width: 60%;
+    margin-left: 50px;
+  }
+  .shoe-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-image: url(/images/shoe-all-white-background.jpg);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    backdrop-filter: blur(5px);
+  }
+  nav {
+    padding: 8px;
+  }
+  .intro-container {
+    width: 60%;
+    margin-left: 100px;
+  }
+  .shoe-container {
+    display: none;
+  }
+  .button-1 {
+    display: none;
+  }
+ 
+}
+@media (max-width: 650px) {
+  .intro-container {
+    margin-left: 50px;
+    width: 70%;
+  }
+  nav li ul{
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    bottom: -80px;
+  }
+}
+@media (max-width: 320px) {
+  footer {
+    bottom: -120px;
+  }
+}
+

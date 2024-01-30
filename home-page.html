@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rack</title>
+    <link rel="stylesheet" href="styles/home-page.css">
+    
+  </head>
+  <body>
+    <div class="side-menu">
+      <div class="user-info-container">
+        <img src="images/black-user-profile.png" alt="" class="user-profile-photo">
+        <div class="user-info">
+          <p class="update js-name-update"></p>
+          <p class="update js-email-update"></p>
+        </div>
+      </div>
+      <hr class="divider">
+      <li class="sidebar-list js-sidelist" onclick="document.querySelector('.side-menu').style.setProperty('transform', 'translateX(-120%)')">
+        <ul class="about-href">About Us</ul>
+        <a href="shopping-page.html"><ul>Services</ul></a>
+        <ul class="contact-href">Contact Us</ul>
+        <a href="index.html" class="log-out"><ul>Log out</ul></a>
+      </li>
+    </div>
+    <nav>
+      <div class="left-side">
+        <button class="menu-button">
+          <img src="images/menu-icon.png" alt="menu-icon" class="sidebar-menu-icon js-menu-icon">
+        </button>
+        <img src="images/hamburger-menu.png" alt="menu" class="menu-icon">
+        <div class="page-name">
+          <a href="shopping-page.html" class="name">Rack</a>
+        </div>
+      </div>
+      <li>
+        <ul class="about-href">About Us</ul>
+        <ul><a href="shopping-page.html">Services</a></ul>
+        <ul class="contact-href">Contact us</ul>
+        <img src="images/black-user-profile.png" alt="" class="profile-icon" onclick="
+        const edit = document.querySelector('.edit-profile')
+        if (edit.style.getPropertyValue('display') === 'grid') {
+          edit.style.setProperty('display', 'none')
+        } else {
+          edit.style.setProperty('display', 'grid')
+        }
+        ">
+      </li>
+      <div class="edit-profile">
+        <div class="edit-info">Edit info</div>
+        <div class="details-div">
+          <label for="name">Name:</label>
+          <div class="editing-container">
+            <input type="text" id="name" class="edit-input name-input js-edit-input" value="tesco" disabled>
+            <img src="images/edit-icon.png" alt="" class="edit-details js-edit" id="name" value="">
+          </div>
+        </div>
+        <div class="details-div">
+          <label for="email">Email:</label>
+          <div class="editing-container">
+            <input type="email" id="email" class="edit-input email-input js-edit-input" value="tesco@gmail.com" disabled>
+            <img src="images/edit-icon.png" alt="" class="edit-details js-edit" id="email">
+          </div>
+        </div>
+        <div class="details-inclusion">
+          <hr class="details-divider">
+          <div class="log-out-option"><a href="index.html">Log out</a></div>
+        </div>
+      </div>
+    </nav>
+    <main class="main" onclick="
+      document.querySelector('.side-menu').style.setProperty('transform', 'translateX(-120%)')
+      const menuIcon = document.querySelector('.js-menu-icon')
+      menuIcon.classList.remove('cancel-icon')
+      menuIcon.setAttribute('src', 'images/menu-icon.png')
+    ">
+      <div class="intro-container">
+        <p class="write-up">
+          Step into style with <b>Rack</b>, your go-to destination for footware that combines fashion and comfort effortlessly. From trendy sneakers to timeless classics, our selection caters to diverse tastes and occasions. Rack - where every pair tells a story and every step is a fashion-forward stride.<br>Elevate your shoe game with us!
+        </p>
+      </div>
+      <div class="shoe-container">
+        <img src="images/knit-athletic-sneakers-gray.jpg" alt="a shoe" class="shoe-image">
+      </div>
+    </main>
+    <div class="about-container js-about-container">
+      <div class="header">About Us</div>
+      <div class="about">
+        <div>
+          <span>10 million+</span><br>
+          Over 10 million shoes have been sold within the past five years.
+        </div>
+        <div>
+          <span>100+</span><br>
+          Partners with over 100+ shoe brands from different countries.
+        </div>
+        <div>
+          <span>Largest</span><br>
+          Largest retail shoe selling company in the world.
+        </div>
+        <div>
+          <span>5 star</span><br>
+          5 million 5 star reviews for our shoes being reliable and quality
+        </div>
+        <div>
+          <span>Refund</span><br>
+          Guaranteed refund incase you did not get what you wanted on delivery
+        </div>
+        <div>
+          <span>150+</span><br>
+          We are curently available in just over 150 countries.
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="starting-content">
+        <p>ABOUT</p>
+        <p>CONTACT</p>
+        <p>PRIVACY</p>
+      </div>
+      <div class="closing-content">COPYRIGHT &copy; 2024</div>
+      <div class="icons">
+        <img src="images/black-facebook-logo.png" alt="">
+        <img src="images/white-thick-instagram-logo.png" class="insta-icon" alt="">
+        <img src="images/twitter-x-boxy-logo.png" alt="">
+        <img src="images/black-github-logo.png" alt="">
+      </div>
+    </footer>
+
+    <script src="scripts/home-page.js" type="module"></script>
+  </body>
+</html>

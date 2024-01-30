@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: Nunito;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.save-tutorial {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.receipt {
+  margin-top: 5%;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 310px;
+  display: grid;
+  grid-template-rows: 80px;
+  padding: 20px;
+  background-color: rgb(236, 236, 236);
+  position: relative;
+}
+.header {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+}
+.section-1 p {
+  font-weight: 600;
+}
+.identifier {
+  font-weight: 800;
+  font-size: 18px;
+  margin-right: 5px;
+}
+hr {
+  margin: 20px 0px;
+
+}
+.section-2 {
+  display: grid;
+  grid-template-columns: 150px 90px 70px;
+}
+.section-2 .product {
+  border-right: 1px solid;
+  padding: 0px
+}
+.section-2 .price {
+  border-right: 1px solid;
+  padding: 0px
+}
+.section-2 div header {
+  font-weight: 800;
+  height: 26px;
+  margin-left: 5px;
+}
+.section-2 div p {
+  height: 60px;
+  border-top: 1px solid;
+  text-wrap: wrap;
+}
+.section-2 div p span {
+  margin: 0px 5px;
+}
+.section-3 {
+  display: grid;
+  grid-template-columns: 150px 90px 70px;
+  font-size: 20px;
+  font-weight: 800;
+  border-top: 2px solid;
+  align-items: center;
+}
+.section-3 .tot {
+  border-right: 1px solid;
+  padding: 5px
+}
+.section-3 .price {
+  border-right: 1px solid;
+  padding: 5px
+}
+.tot-amount {
+  margin-left: 5px;
+}
+.product-column {
+  display: grid;
+}
+button {
+  position: absolute;
+  bottom: 20px;
+  left: 120px;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border: 2px solid;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.screenshot {
+  color: grey;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="styles/receipt.css">
+  </head>
+  <body>
+    <div class="receipt">
+      <header class="header">
+        Receipt
+      </header>
+      <main>
+        <div class="section-1">
+          <p><span class="identifier js-identity">Customer:</span> <span class="identity"></span></p>
+          <p><span class="identifier">Purchase id:</span> <span class="purchase-id"></span>rack</p>
+          <p><span class="identifier">Salesperson:</span> Tesco</p>
+        </div>
+        <hr>
+        <div class="section-2">
+          <div class="product product-column js-product">
+            <header>Product</header>
+          </div>
+          <div class="price product-column js-price">
+            <header>Price</header>
+          </div>
+          <div class="amount product-column js-amount">
+            <header>Amount</header>
+          </div>
+        </div>
+        <div class="section-3">
+          <div class="total tot">Total:</div>
+          <div class="total-price price"></div>
+          <div class="total-amount tot-amount"></div>
+        </div>
+      </main>
+    </div>
+    <div class="screenshot">*screenshot to save</div>
+
+    <script src="scripts/receipt.js" type="module"></script>
+  </body>
+</html>

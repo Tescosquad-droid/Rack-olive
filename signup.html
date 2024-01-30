@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles/signup.css">
+  </head>
+  <body>
+    <div class="signup-container">
+      <header>Sign up</header>
+      <div class="details-container">
+        <label for="first-name">First Name:<br><span>*optional</span></label>
+        <input type="text">
+      </div>
+      <div class="details-container">
+        <label for="last-name">Last Name:<br><span>*optional</span></label>
+        <input type="text">
+      </div>
+      <div class="details-container">
+        <label for="user-name">User Name:</label>
+        <input type="text" id="username">
+      </div>
+      <div class="details-container">
+        <label for="email">Email address:</label>
+        <input type="email" id="email">
+      </div>
+      <div class="details-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <img src="images/password-locked-logo.png" alt="" class="see-password js-see-password">
+      </div>
+      <div class="details-container">
+        <label for="dob">Date of Birth:<br><span>*optional</span></label>
+        <input type="date">
+      </div>
+      <p class="warning js-warning">Fill every compulsory details</p>
+      <div class="button-container">
+        <a class="link"><button class="js-signup signup">Sign Up</button></a>
+      </div>
+    </div>
+
+    <script src="scripts/signup.js" type="module"></script>
+  </body>
+</html>
