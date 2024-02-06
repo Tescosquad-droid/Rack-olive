@@ -4,7 +4,7 @@
 }
 body {
   display: flex;
-  font-family: Nunito;
+  font-family: 'Nunito';
   background-color: rgb(237, 237, 237);
   color: black;
   -webkit-tap-highlight-color: transparent;

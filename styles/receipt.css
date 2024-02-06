@@ -7,7 +7,7 @@ a {
   color: black;
 }
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   color: black;
   display: flex;
   flex-direction: column;

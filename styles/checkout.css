@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   position: relative;
   color: black;
   display: grid;
@@ -85,8 +85,12 @@ nav {
 }
 .details-container {
   display: grid;
-  row-gap: 10px;
+  row-gap: 6px;
   font-weight: 700;
+  margin-top: 5px;
+}
+.details-container p {
+  height: fit-content;
 }
 .delete {
   width: 30px;

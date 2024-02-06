@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -104,13 +104,13 @@ ul {
 }
 .company-name {
   font-size: 40px;
-  font-family: Pacifico;
+  font-family: 'Pacifico';
   font-weight: 700;
   cursor: pointer;
   position: relative;
 }
 .page-name {
-  font-family: Pacifico;
+  font-family: 'Pacifico';
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -516,10 +516,10 @@ footer p {
 }
 @media (max-width: 380px) {
   .about-container {
-    margin: 0px 12px;
+    margin: 0px 8px;
   }
   .about {
-    column-gap: 10px;
+    column-gap: 7px;
   }
   footer p {
     margin: 0px 20px;

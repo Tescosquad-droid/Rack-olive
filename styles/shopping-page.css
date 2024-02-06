@@ -3,7 +3,7 @@
   margin: 0px;
 }
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   color: black;
   position: relative;
   -webkit-tap-highlight-color: transparent;
@@ -32,7 +32,7 @@ nav {
 
 .company-name {
   font-size: 35px;
-  font-family: Pacifico;
+  font-family: 'Pacifico';
   font-weight: 800;
   cursor: pointer;
 }
@@ -112,25 +112,6 @@ main {
 }
 .image-container {
   position: relative;
-}
-.discount-tag {
-  width: 35px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: red;
-}
-.discount-price {
-  position: absolute;
-  top: 19px;
-  right: 14px;
-  height: 18px;
-  font-size: 10px;
-  font-weight: 800;
-  color: white;
-  transform: rotate(15deg);
-  background-color: rgb(244, 0, 0);
-  cursor: default;
 }
 .key-detail {
   display: flex;
@@ -327,19 +308,19 @@ select {
 @media (max-width: 380px) {
   .product-container {
     grid-template-columns: 1fr 1fr;
-    margin-left: 2px;
+    margin-left: 5px;
     column-gap: 4px;
-    row-gap: 5px;
+    row-gap: 10px;
   }
   .product {
-    width: 180px;
+    width: 170px;
   }
   .edited-images {
-    width: 180px;
+    width: 170px;
     height: 150px;
   }
   .order-button {
-    width: 100px;
+    width: 85px;
   }
 }
 @media (max-width: 325px) {

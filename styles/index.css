@@ -5,7 +5,7 @@ html {
   height: 639px;
 }
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   background-color: #eaeaea;
   width: 100%;
   height: 100%;
@@ -38,7 +38,7 @@ ul {
   display: flex;
 }
 .page-name {
-  font-family:Pacifico;
+  font-family:'Pacifico';
   font-size: 33px;
   font-weight: 700;
   letter-spacing: 1px;
