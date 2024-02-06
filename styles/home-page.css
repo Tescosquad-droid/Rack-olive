@@ -16,6 +16,7 @@ body {
   height: 100%;
   color: black;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 nav {
   display: flex;
@@ -515,7 +516,7 @@ footer p {
 }
 @media (max-width: 380px) {
   .about-container {
-    margin: 0px 15px;
+    margin: 0px 12px;
   }
   .about {
     column-gap: 10px;
@@ -527,7 +528,7 @@ footer p {
 @media (max-width: 320px) {
   .about-container {
     bottom: -93%;
-    margin: 0px 5px;
+    margin: 0px 2px;
   }
   .about div {
     width: 130px;

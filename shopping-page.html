@@ -27,32 +27,37 @@
       </div>
     </nav>
     <main>
-      <div class="filter-container">
-        <div class="filter">
+      <div class="filt-container">
+        <header class="js-filter-click">
           Filter
-          <img src="images/double-medium-filter-icon.png" alt="" class="filter-icon js-filter">
-        </div>
-        
-        <div class="single-filter-container js-filters">
-          <div class="individual-container">
-            Gender
-            <select name="filter" id="filter" class="js-gender gender-click">
-              <option value="all" >all</option>
-              <option value="male" >male</option>
-              <option value="female" >female</option>
-            </select>
-          </div>
-          <div class="individual-container">
-            Brand
-            <select name="filter-2" id="filter-2" class="js-brand brand-click">
-              <option value="all" class="brand" >all</option>
-              <option value="adidas" class="brand">adidas</option>
-              <option value="nike" class="brand">nike</option>
-              <option value="puma" class="brand">puma</option>
-              <option value="louis vuitton" class="brand">louis vuitton</option>
-              <option value="others" class="brand">others</option>
-            </select>
-          </div>
+          <img src="images/double-medium-filter-icon.png" alt="" class="filt-icon js-filt-icon">
+        </header>
+        <div class="filter-step js-filter-step">
+          <ul class="head js-head">
+            <header class="head-click" data-attr="gender">
+              Gender
+              <div class="arrow js-arrow-gender"></div>
+            </header>
+            <ul class="list js-list-gender">
+              <li>all</li>
+              <li>male</li>
+              <li>female</li>
+            </ul>
+          </ul>
+          <ul class="head js-head">
+            <header class="head-click" data-attr="brand">
+              Brand
+              <div class="arrow js-arrow-brand"></div>
+            </header>
+            <ul class="list js-list-brand">
+              <li>all</li>
+              <li>adidas</li>
+              <li>nike</li>
+              <li>puma</li>
+              <li>louis vuitton</li>
+              <li>others</li>
+            </ul>
+          </ul>
         </div>
       </div>
       <div class="js-product-container product-container"></div>

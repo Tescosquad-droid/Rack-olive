@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 .save-tutorial {
   text-align: center;
@@ -111,4 +112,19 @@ button {
 }
 .screenshot {
   color: grey;
+}
+@media (max-width: 380px) {
+  body {
+    background-color: rgb(236, 236, 236);
+  }
+  .section-2 {
+    grid-template-columns: 130px 80px 60px;
+  }
+  .section-3 {
+    grid-template-columns: 130px 80px 60px;
+  }
+  .receipt {
+    border: none;
+    width: 280px;
+  }
 }

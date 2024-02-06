@@ -11,6 +11,7 @@ body {
   height: 100%;
   color: black;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 nav {
   display: flex;
@@ -228,7 +229,7 @@ footer {
 }
 @media (max-width: 320px) {
   footer {
-    bottom: -120px;
+    bottom: -150px;
   }
 }
 

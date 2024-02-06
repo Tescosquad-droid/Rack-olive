@@ -7,6 +7,7 @@ body {
   position: relative;
   color: black;
   display: grid;
+  -webkit-tap-highlight-color: transparent;
 }
 a {
   text-decoration: none;
@@ -178,14 +179,17 @@ nav {
 }
 @media (max-width: 430px) {
   .order-container {
-    height: 150px;
+    height: 160px;
   }
   .shoe-image {
     width: 220px;
-    height: 150px;
+    height: 160px;
   }
 }
 @media (max-width: 380px) {
+  .order-successful {
+    left: 20%;
+  }
   .purchase-details {
     border: none;
     margin-top: 20px;
@@ -196,6 +200,10 @@ nav {
   }
   .purchase-details div span {
     right: 20px;
+  }
+  .shoe-image {
+    width: 150px;
+    height: 160px;
   }
 }
 @media (max-width: 320px) {
